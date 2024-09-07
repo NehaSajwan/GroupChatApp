@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg background">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-light" href="/index.html">Chat App</a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="material-symbols-outlined fs-5">
+                    menu
+                    </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid my-3 mid-section">
+      <div class="first">
+        <!-- <p class="para card float-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nostrum laborum ipsam sunt qui culpa eligendi nulla aut soluta molestiae. consequuntur.</p>
+        <p class="para card float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nostrum laborum ipsam sunt qui culpa eligendi nulla aut soluta molestiae. consequuntur.</p>
+        <p class="mid-para">Neha Join The Chat</p>
+        <p class="para card float-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nostrum laborum ipsam sunt qui culpa eligendi nulla aut soluta molestiae. consequuntur.</p>
+        <p class="para card float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nostrum laborum ipsam sunt qui culpa eligendi nulla aut soluta molestiae. consequuntur.</p> -->
+      </div>
+      <div class="second">
+        <form onsubmit="sendMessage(); return false" class="d-flex">
+            <textarea id="message" rows="1" class="form-control"></textarea>
+            <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <footer class="background text-light text-center p-1 fixed-bottom">
+        <p>copyright@chatapplication</p>
+    </footer>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
